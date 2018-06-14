@@ -5,7 +5,7 @@ class StudentsController < ApplicationController
   end
 
   def create
-    @student = Student.create()
+    @student = Student.create(post_params(:first_name, :last_name))
   end
 
   def show
