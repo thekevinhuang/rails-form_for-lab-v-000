@@ -5,7 +5,7 @@ class StudentsController < ApplicationController
   end
 
   def create
-
+    @student = Student.create()
   end
 
   def show
@@ -20,4 +20,9 @@ class StudentsController < ApplicationController
 
   end
 
+  private
+
+  def post_params(*args)
+    params.require(:student).permit(:first_name, :last_name)
+  end
 end
