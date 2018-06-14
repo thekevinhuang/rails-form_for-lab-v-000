@@ -5,13 +5,13 @@ class SchoolClassesController <ApplicationController
   end
 
   def new
-    
+
   end
 
   def create
-    @school_class = SchoolClass.create(post)
+    @school_class = SchoolClass.create(post_params(:title, :room_number))
   end
-  
+
   def edit
     @school_class = SchoolClass.find(params[:id])
   end
