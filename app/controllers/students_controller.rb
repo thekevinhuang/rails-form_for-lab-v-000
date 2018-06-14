@@ -1,7 +1,7 @@
 class StudentsController < ApplicationController
 
   def new
-
+    
   end
 
   def create
@@ -17,7 +17,7 @@ class StudentsController < ApplicationController
   end
 
   def update
-    
+
   end
 
 end
