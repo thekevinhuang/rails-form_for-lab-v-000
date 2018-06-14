@@ -10,7 +10,7 @@ class SchoolClassesController <ApplicationController
 
   def create
     @school_class = SchoolClass.create(post_params(:title, :room_number))
-    redirect_to 
+    redirect_to
   end
 
   def edit
